@@ -45,30 +45,31 @@ h1  {
     left: 0%;
 }
 
-.kr13, .krtest {
+.scene-2,
+.scene-3 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
     min-height: 100vh;
+    background-color: black;
 }
 
-.kr13 .fixed-section {
-    width: 702px;
+.scene-3 .fixed-section {
+    width: 700px;
     height: 543px;
 }
 
-.krtest .fixed-section {
-    width: 300px;
-    height: 160px;
+.scene-2 .fixed-section {
+    width: 700px;
+    height: 761.67px;
 }
 
 .fixed-section {
     box-sizing: content-box;
     position: relative;
-    border: 5px solid black;
-    margin: .5rem;
+    border: 3px solid black;
 }
 
 .fixed-section img {
@@ -76,21 +77,33 @@ h1  {
     bottom: 0;
     left: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
     /* width: 100% this will keep the comic consistant going down the page */
 }
 
 .flex-section {
     display: flex;
     justify-content: center;
-    width: 500px;
+    width: 700px;
     flex-wrap: wrap;
 }
 
-.flex-section img{
+.flex-section img {
     margin: .5rem;
+    width: -moz-calc(100% - 1rem);
+    width: -webkit-calc(100% - 1rem);
+    width: -o-calc(100% - 1rem);
+    width: calc(100% - 1rem);
+    border: 3px solid black;
 }
 
 .column {
     display: flex;
     flex-direction: column;
+}
+
+.row {
+    display: flex;
+    width: 700px;
 }

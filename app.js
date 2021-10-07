@@ -19,6 +19,35 @@ tween.add(
 
 /* second section */
 
+const controller = new ScrollMagic.Controller();
+
+
+const tween3 = new TimelineLite();
+
+tween3.add(
+    TweenLite.to(".s2-1", 1,  {
+        css:{ opacity: 0 },
+    })
+
+)
+.add(
+    TweenLite.to(".s2-2", 1,  {
+        css:{ opacity: 0 },
+    })
+
+);
+
+const scene3 = new ScrollMagic.Scene({
+    triggerElement: '.scene-2',
+    duration: 1000,
+    triggerHook: 0,
+})
+.setTween(tween3)
+.addIndicators()
+.setPin('.scene-2')
+.addTo(controller) 
+
+
 const tween2 = new TimelineLite();
 
 tween2.add(
@@ -49,7 +78,6 @@ tween2.add(
     TweenLite.to(".kr13-8", 1,  {
         css:{ opacity: "1", animation: "shake 0.5s"
          },
-
     })
 )
 .add(
@@ -59,8 +87,6 @@ tween2.add(
     })
 );
 
-const controller = new ScrollMagic.Controller();
-
 const scene = new ScrollMagic.Scene({
     triggerElement: '.animation',
     duration: 1000,
@@ -68,15 +94,15 @@ const scene = new ScrollMagic.Scene({
 })
 .setTween(tween)
 .addIndicators()
-.setPin('.animation', '.kr-13')
+.setPin('.animation')
 .addTo(controller)
 
 const scene2 = new ScrollMagic.Scene({
-    triggerElement: '.kr13',
+    triggerElement: '.scene-3',
     duration: 1000,
     triggerHook: 0,
 })
 .setTween(tween2)
 .addIndicators()
-.setPin('.kr13')
+.setPin('.scene-3')
 .addTo(controller)
