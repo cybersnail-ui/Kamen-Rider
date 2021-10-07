@@ -14,6 +14,48 @@ tween.add(
     TweenLite.to(".battle-hopper", 1,  {
         bezier: flightPath,
         ease: Power1.easeInOut
+    }), ">"
+);
+
+/* second section */
+
+const tween2 = new TimelineLite();
+
+tween2.add(
+    TweenLite.to(".kr13-2", 1,  {
+        css:{ opacity: 0 },
+    })
+
+)
+.add(
+    TweenLite.to(".kr13-4", 1,  {
+        css:{ opacity: 0 },
+    })
+
+)
+.add(
+    TweenLite.to(".kr13-5", 1,  {
+        css:{ opacity: 0 },
+    })
+
+)
+.add(
+    TweenLite.to(".kr13-6", 1,  {
+        css:{ opacity: 0 },
+
+    })
+)
+.add(
+    TweenLite.to(".kr13-8", 1,  {
+        css:{ opacity: "1", animation: "shake 0.5s"
+         },
+
+    })
+)
+.add(
+    TweenLite.to(".kr13-9", 1,  {
+        css:{ opacity: 1, animation: "shake 0.5s"},
+
     })
 );
 
@@ -26,50 +68,15 @@ const scene = new ScrollMagic.Scene({
 })
 .setTween(tween)
 .addIndicators()
-.setPin('.animation')
+.setPin('.animation', '.kr-13')
 .addTo(controller)
-
-/* second section */
-
-tween.add(
-    TweenLite.to(".kr13-2", 1,  {
-        css:{ opacity: .0 },
-        ease: Power1.easeInOut
-    }),
-
-);
-
-tween.add(
-    TweenLite.to(".kr13-4", 1,  {
-        css:{ opacity: .0 },
-        ease: Power1.easeInOut
-    }),
-
-);
-
-tween.add(
-    TweenLite.to(".kr13-5", 1,  {
-        css:{ opacity: .0 },
-        ease: Power1.easeInOut
-    }),
-
-);
-
-tween.add(
-    TweenLite.to(".kr13-6", 1,  {
-        css:{ opacity: .0 },
-        ease: Power1.easeInOut
-    }), 
-
-);
 
 const scene2 = new ScrollMagic.Scene({
     triggerElement: '.kr13',
     duration: 1000,
-        duration: 3000,
     triggerHook: 0,
 })
-.setTween(tween)
+.setTween(tween2)
 .addIndicators()
 .setPin('.kr13')
 .addTo(controller)
