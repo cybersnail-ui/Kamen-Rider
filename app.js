@@ -1,4 +1,4 @@
-const flightPath = {
+/*const flightPath = {
     curviness: 1.25,
     autoRotate: true,
     values: [
@@ -15,12 +15,22 @@ tween.add(
         bezier: flightPath,
         ease: Power1.easeInOut
     }), ">"
-);
+);*/
 
 /* second section */
 
 const controller = new ScrollMagic.Controller();
 
+/*
+const scene = new ScrollMagic.Scene({
+    triggerElement: '.animation',
+    duration: 1000,
+    triggerHook: 0
+})
+.setTween(tween)
+.addIndicators()
+.setPin('.animation')
+.addTo(controller)*/
 
 const tween3 = new TimelineLite();
 
@@ -86,16 +96,6 @@ tween2.add(
 
     })
 );
-
-const scene = new ScrollMagic.Scene({
-    triggerElement: '.animation',
-    duration: 1000,
-    triggerHook: 0
-})
-.setTween(tween)
-.addIndicators()
-.setPin('.animation')
-.addTo(controller)
 
 const scene2 = new ScrollMagic.Scene({
     triggerElement: '.scene-3',
