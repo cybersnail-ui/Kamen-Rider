@@ -28,3 +28,48 @@ const scene = new ScrollMagic.Scene({
 .addIndicators()
 .setPin('.animation')
 .addTo(controller)
+
+/* second section */
+
+tween.add(
+    TweenLite.to(".kr13-2", 1,  {
+        css:{ opacity: .0 },
+        ease: Power1.easeInOut
+    }),
+
+);
+
+tween.add(
+    TweenLite.to(".kr13-4", 1,  {
+        css:{ opacity: .0 },
+        ease: Power1.easeInOut
+    }),
+
+);
+
+tween.add(
+    TweenLite.to(".kr13-5", 1,  {
+        css:{ opacity: .0 },
+        ease: Power1.easeInOut
+    }),
+
+);
+
+tween.add(
+    TweenLite.to(".kr13-6", 1,  {
+        css:{ opacity: .0 },
+        ease: Power1.easeInOut
+    }), 
+
+);
+
+const scene2 = new ScrollMagic.Scene({
+    triggerElement: '.kr13',
+    duration: 1000,
+        duration: 3000,
+    triggerHook: 0,
+})
+.setTween(tween)
+.addIndicators()
+.setPin('.kr13')
+.addTo(controller)

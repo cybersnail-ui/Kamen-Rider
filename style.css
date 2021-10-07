@@ -35,3 +35,25 @@ header h1  {
     top: 50%;
     left: 0%;
 }
+
+.kr13 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+.section {
+    box-sizing: content-box;
+    position: relative;
+    width: 702px;
+    height: 543px;
+    border: 5px solid black;
+}
+
+.kr13 img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
