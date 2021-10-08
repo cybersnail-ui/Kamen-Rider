@@ -31,7 +31,7 @@ const scene = new ScrollMagic.Scene({
 .addIndicators()
 .setPin('.animation')
 .addTo(controller)*/
-
+/*
 const tween3 = new TimelineLite();
 
 tween3.add(
@@ -55,7 +55,7 @@ const scene3 = new ScrollMagic.Scene({
 .setTween(tween3)
 .addIndicators()
 .setPin('.two')
-.addTo(controller) 
+.addTo(controller) */
 
 
 const tween2 = new TimelineLite();
