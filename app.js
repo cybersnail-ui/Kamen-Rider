@@ -131,18 +131,8 @@ tween4.add(
     })
 )
 .add(
-    TweenLite.to(".s4-6", 1,  {
-        css:{ opacity: 1 },
-    })
-)
-.add(
-    TweenLite.to(".s4-6", 1,  {
-        css:{ opacity: 1 },
-    })
-)
-.add(
-    TweenLite.to(".s4-5", 1,  {
-        css:{ opacity: 1 },
+    TweenLite.to(".s4-6-5", 1,  {
+        css:{ opacity: 1},
     })
 )
 .add(
