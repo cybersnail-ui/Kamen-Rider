@@ -48,13 +48,13 @@ tween3.add(
 );
 
 const scene3 = new ScrollMagic.Scene({
-    triggerElement: '.scene-2',
+    triggerElement: '.two',
     duration: 1000,
     triggerHook: 0,
 })
 .setTween(tween3)
 .addIndicators()
-.setPin('.scene-2')
+.setPin('.two')
 .addTo(controller) 
 
 
@@ -104,13 +104,13 @@ tween2.add(
 );
 
 const scene2 = new ScrollMagic.Scene({
-    triggerElement: '.scene-3',
+    triggerElement: '.three',
     duration: 1000,
     triggerHook: 0,
 })
 .setTween(tween2)
 .addIndicators()
-.setPin('.scene-3')
+.setPin('.three')
 .addTo(controller)
 
 const tween4 = new TimelineLite();
@@ -157,11 +157,11 @@ tween4.add(
 )
 
 const scene4 = new ScrollMagic.Scene({
-    triggerElement: '.scene-4',
+    triggerElement: '.four',
     duration: 1000,
     triggerHook: 0,
 })
 .setTween(tween4)
 .addIndicators()
-.setPin('.scene-4')
+.setPin('.four')
 .addTo(controller)

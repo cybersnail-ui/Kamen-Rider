@@ -62,9 +62,7 @@ h1  {
     left: 0%;
 }
 
-.scene-2,
-.scene-3,
-.scene-4 {
+.scene {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,17 +73,7 @@ h1  {
     background-color: black;
 }
 
-.scene-2 .fixed-section {
-    width: 700px;
-    height: 550px;
-}
-
-.scene-3 .fixed-section {
-    width: 700px;
-    height: 550px;
-}
-
-.scene-4 .fixed-section {
+.scene .fixed-section {
     width: 700px;
     height: 550px;
 }
