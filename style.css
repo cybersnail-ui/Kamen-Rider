@@ -23,7 +23,16 @@
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
 
 header,
 footer {
@@ -54,7 +63,8 @@ h1  {
 }
 
 .scene-2,
-.scene-3 {
+.scene-3,
+.scene-4 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,14 +75,19 @@ h1  {
     background-color: black;
 }
 
-.scene-3 .fixed-section {
-    width: 700px;
-    height: 543px;
-}
-
 .scene-2 .fixed-section {
     width: 700px;
-    height: 761.67px;
+    height: 550px;
+}
+
+.scene-3 .fixed-section {
+    width: 700px;
+    height: 550px;
+}
+
+.scene-4 .fixed-section {
+    width: 700px;
+    height: 550px;
 }
 
 .fixed-section {

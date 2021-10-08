@@ -112,3 +112,66 @@ const scene2 = new ScrollMagic.Scene({
 .addIndicators()
 .setPin('.scene-3')
 .addTo(controller)
+
+const tween4 = new TimelineLite();
+
+tween4.add(
+    TweenLite.to(".s4-11-9", 1,  {
+        css:{ opacity: 1 },
+    })
+)
+.add(
+    TweenLite.to(".s4-8", 1,  {
+        css:{ opacity: 1 },
+    })
+)
+.add(
+    TweenLite.to(".s4-7", 1,  {
+        css:{ opacity: 1 },
+    })
+)
+.add(
+    TweenLite.to(".s4-6", 1,  {
+        css:{ opacity: 1 },
+    })
+)
+.add(
+    TweenLite.to(".s4-6", 1,  {
+        css:{ opacity: 1 },
+    })
+)
+.add(
+    TweenLite.to(".s4-5", 1,  {
+        css:{ opacity: 1 },
+    })
+)
+.add(
+    TweenLite.to(".s4-4", 1,  {
+        css:{ opacity: 1 },
+    })
+)
+.add(
+    TweenLite.to(".s4-3", 1,  {
+        css:{ opacity: 1 },
+    })
+)
+.add(
+    TweenLite.to(".s4-2", 1,  {
+        css:{ opacity: 1 },
+    })
+)
+.add(
+    TweenLite.to(".s4-1", 1,  {
+        css:{ opacity: 1 },
+    })
+)
+
+const scene4 = new ScrollMagic.Scene({
+    triggerElement: '.scene-4',
+    duration: 1000,
+    triggerHook: 0,
+})
+.setTween(tween4)
+.addIndicators()
+.setPin('.scene-4')
+.addTo(controller)
