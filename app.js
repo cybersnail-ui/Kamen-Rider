@@ -61,6 +61,12 @@ const scene3 = new ScrollMagic.Scene({
 const tween2 = new TimelineLite();
 
 tween2.add(
+    TweenLite.to(".kr13-1", 1,  {
+        css:{ opacity: 1 },
+    })
+
+)
+.add(
     TweenLite.to(".kr13-2", 1,  {
         css:{ opacity: 0 },
     })
